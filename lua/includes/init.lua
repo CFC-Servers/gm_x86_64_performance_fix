@@ -1,5 +1,5 @@
-if ( BRANCH == "x86-64" ) then
-	print( "x86-64 branch detected, disabling LuaJIT to improve performance" )
+if ( jit.version == "LuaJIT 2.1.0-beta3" ) then
+	print( "x86-64 JIT detected, disabling LuaJIT to improve performance" )
 	jit.off()
 end
 
